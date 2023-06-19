@@ -1,0 +1,16 @@
+<h2>My Players</h2>
+<div>
+  <label>Player name:
+    <input #playerName />
+  </label>
+  <!-- (click) means "call add(playerName.value) when this button is clicked" -->
+  <button (click)="add(playerName.value); playerName.value=''">
+    Add Player
+  </button>
+</div>
+<ul>
+  <li *ngFor="let player of players">
+    {{player.name}}
+    <button class="delete" title="delete player" (click)="delete(player)">x</button>
+  </li>
+</ul>
