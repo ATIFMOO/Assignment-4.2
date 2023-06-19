@@ -1,0 +1,8 @@
+/* PlayersComponent's private CSS styles */
+li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  transition: all 0.2s ease;
+}
+li:hover {color: deeppink;}
